@@ -1,25 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Estate World</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real State World !</title>
+    <link rel="stylesheet" href="styles.css" /> 
 </head>
 <body>
-    <header>
-        <h1><span class="material-symbols-outlined">home</span> Real Estate World</h1>
-    </header>
-    
-    <div id="property-list">
-        <img src="" alt="">
+
+  <header>
+    <div class="logo">InmoPremium</div>
+
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Propiedades</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="carousel">
+      <div class="slides" id="slides">
+
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1400&auto=format&fit=crop');">
+          <div class="overlay">
+            <h1>Encuentra tu hogar ideal</h1>
+            <p>Las mejores propiedades en las mejores ubicaciones.</p>
+          </div>
+        </div>
+
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1400&auto=format&fit=crop');">
+          <div class="overlay">
+            <h1>Viviendas exclusivas</h1>
+            <p>Diseños modernos y espacios únicos para vivir.</p>
+          </div>
+        </div>
+
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1400&auto=format&fit=crop');">
+          <div class="overlay">
+            <h1>Invierte con confianza</h1>
+            <p>Oportunidades inmobiliarias premium para ti.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="carousel-buttons">
+        <button onclick="prevSlide()">❮</button>
+        <button onclick="nextSlide()">❯</button>
+      </div>
     </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2026 Real Estate World. All rights reserved.</p>
-    </footer>
+  <section class="properties">
+    <h2>Propiedades Destacadas</h2>
 
-    <script src="main.js"></script>
+    <div class="property-grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop" alt="Casa moderna">
+        <div class="card-content">
+          <h3>Piso Moderno en Madrid</h3>
+          <p>3 habitaciones · 2 baños · 120m²</p>
+          <div class="price">€450,000</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" alt="Villa de lujo">
+        <div class="card-content">
+          <h3>Villa de Lujo</h3>
+          <p>5 habitaciones · Piscina · Jardín</p>
+          <div class="price">€1,250,000</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop" alt="Apartamento">
+        <div class="card-content">
+          <h3>Ático con Terraza</h3>
+          <p>2 habitaciones · Centro ciudad</p>
+          <div class="price">€620,000</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>¿Buscando una propiedad?</h2>
+    <p>Contáctanos y encuentra la mejor opción para ti.</p>
+    <br>
+    <button>Contactar</button>
+  </section>
+
+  <footer>
+    <p>© 2026 InmoPremium · Todos los derechos reservados</p>
+  </footer>
+
+  <script src="main.js"></script>
+
 </body>
 </html>
