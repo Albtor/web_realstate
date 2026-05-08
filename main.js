@@ -18,3 +18,33 @@ const slides = document.getElementById('slides');
     }
 
     setInterval(nextSlide, 5000);
+
+
+    const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function (event) {
+
+  event.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const phone = document.getElementById("phone").value;
+  const message = document.getElementById("message").value;
+  const terms = document.getElementById("terms").checked;
+
+  if (!terms) {
+    alert("You must accept the terms and conditions.");
+    return;
+  }
+
+  console.log({
+    name,
+    email,
+    phone,
+    message
+  });
+
+  alert("Message sent successfully!");
+
+  form.reset();
+});

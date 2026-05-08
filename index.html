@@ -9,14 +9,14 @@
 <body>
 
   <header>
-    <div class="logo">InmoPremium</div>
+    <div class="logo">Real State World</div>
 
     <nav>
       <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Propiedades</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Properties</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -27,22 +27,22 @@
 
         <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1400&auto=format&fit=crop');">
           <div class="overlay">
-            <h1>Encuentra tu hogar ideal</h1>
-            <p>Las mejores propiedades en las mejores ubicaciones.</p>
+            <h1>Find your ideal home</h1>
+            <p>The best properties in the best locations.</p>
           </div>
         </div>
 
         <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1400&auto=format&fit=crop');">
           <div class="overlay">
-            <h1>Viviendas exclusivas</h1>
-            <p>Diseños modernos y espacios únicos para vivir.</p>
+            <h1>Exclusive homes</h1>
+            <p>Modern designs and unique spaces to live in.</p>
           </div>
         </div>
 
         <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1400&auto=format&fit=crop');">
           <div class="overlay">
-            <h1>Invierte con confianza</h1>
-            <p>Oportunidades inmobiliarias premium para ti.</p>
+            <h1>Invest with confidence</h1>
+            <p>Premium real estate opportunities for you.</p>
           </div>
         </div>
 
@@ -56,33 +56,33 @@
   </section>
 
   <section class="properties">
-    <h2>Propiedades Destacadas</h2>
+    <h2>Featured Properties</h2>
 
     <div class="property-grid">
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop" alt="Casa moderna">
+        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop" alt="Modern house">
         <div class="card-content">
-          <h3>Piso Moderno en Madrid</h3>
-          <p>3 habitaciones · 2 baños · 120m²</p>
+          <h3>Modern Apartment in Madrid</h3>
+          <p>3 bedrooms · 2 bathrooms · 120m²</p>
           <div class="price">€450,000</div>
         </div>
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" alt="Villa de lujo">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" alt="Luxury villa">
         <div class="card-content">
-          <h3>Villa de Lujo</h3>
-          <p>5 habitaciones · Piscina · Jardín</p>
+          <h3>Luxury Villa</h3>
+          <p>5 bedrooms · Pool · Garden</p>
           <div class="price">€1,250,000</div>
         </div>
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop" alt="Apartamento">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop" alt="Apartment">
         <div class="card-content">
-          <h3>Ático con Terraza</h3>
-          <p>2 habitaciones · Centro ciudad</p>
+          <h3>Penthouse with Terrace</h3>
+          <p>2 bedrooms · City center</p>
           <div class="price">€620,000</div>
         </div>
       </div>
@@ -91,14 +91,72 @@
   </section>
 
   <section class="cta">
-    <h2>¿Buscando una propiedad?</h2>
-    <p>Contáctanos y encuentra la mejor opción para ti.</p>
-    <br>
-    <button>Contactar</button>
+
+    <h2>Looking for a property?</h2>
+
+    <p>
+      Contact us and we will help you find the perfect property.
+    </p>
+
+    <div class="contact-icons">
+      <a href="mailto:info@inmopremium.com" title="Email">
+        ✉️
+      </a>
+
+      <a
+        href="https://wa.me/34123456789"
+        target="_blank"
+        title="WhatsApp"
+      >
+        🟢
+      </a>
+    </div>
+
+    <form id="contactForm">
+
+      <input
+        type="text"
+        id="name"
+        placeholder="Name *"
+        required
+      />
+
+      <input
+        type="email"
+        id="email"
+        placeholder="Email Address *"
+        required
+      />
+
+      <input
+        type="tel"
+        id="phone"
+        placeholder="Phone Number (Optional)"
+      />
+
+      <textarea
+        id="message"
+        rows="5"
+        placeholder="Your message..."
+      ></textarea>
+
+      <label class="checkbox-container">
+        <input type="checkbox" id="terms" required />
+
+        I agree to the processing of my personal data according to
+        the terms and conditions.
+      </label>
+
+      <button type="submit">
+        Send Message
+      </button>
+
+    </form>
+
   </section>
 
   <footer>
-    <p>© 2026 InmoPremium · Todos los derechos reservados</p>
+    <p>© 2026 InmoPremium · All rights reserved</p>
   </footer>
 
   <script src="main.js"></script>
