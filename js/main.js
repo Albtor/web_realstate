@@ -1,24 +1,28 @@
 const slides = document.getElementById('slides');
-    const totalSlides = document.querySelectorAll('.slide').length;
+const totalSlides = document.querySelectorAll('.slide').length;
 
-    let currentIndex = 0;
+let currentIndex = 0;
 
-    function updateCarousel() {
-      slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
+function updateCarousel() {
+  slides.style.transform =
+    `translateX(-${currentIndex * 100}%)`;
+}
 
-    function nextSlide() {
-      currentIndex = (currentIndex + 1) % totalSlides;
-      updateCarousel();
-    }
+function nextSlide() {
+  currentIndex =
+    (currentIndex + 1) % totalSlides;
 
-    function prevSlide() {
-      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-      updateCarousel();
-    }
+  updateCarousel();
+}
 
-    setInterval(nextSlide, 5000);
-    const form = document.getElementById("contactForm");
+function prevSlide() {
+  currentIndex =
+    (currentIndex - 1 + totalSlides) % totalSlides;
+
+  updateCarousel();
+}
+
+setInterval(nextSlide, 5000);
 
 form.addEventListener("submit", function (event) {
 
